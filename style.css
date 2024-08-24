@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #363b4e;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100%;
+}
+
+nav{
+    display:flex;
+    width:90%;/*logo and buttons*/
+    margin: auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 5px;
+    font-size: xx-small;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight:200;
+}
+nav ul li a:hover{
+    color:#927fbf;
+}
+nav h1{
+    text-align: right;
+    font-size:x-small;
+    color: white;
+}
+
+
+.info{
+    width: 100%;
+}
+.info h1{
+    padding-top:90px;
+    font-size: 150px;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.info h3{
+    font-size: 20px;
+    color:#927fbf;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.info h2{
+    padding:2px 5px 10px;
+    font-family: arial;
+    font-size: 30px;
+    color:#c4bbf0;
+    line-height: 44px;
+    text-align: center;
+}
+.info p{
+    padding:0px 30px 20px;
+    font-family: arial;
+    font-size: 16px;
+    color: white;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+/*ABOUT*/
+.detail2{
+    color: white;
+}
+.detail2 h2{
+    padding-top:10px;
+    font-size: 16px;
+    color: white;
+    line-height: 24px;
+    text-align: center;
+}
+.detail2 p{
+    padding:10px 30px 20px;
+    font-size: 16px;
+    color: white;
+    line-height: 24px;
+    text-align: center;
+}
+.detail2 span{
+    color:#c4bbf0;
+}
+
+/*aboutmepic*/
+.position {
+    margin-top: 5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    display: block;
+  }
+
+
+  /*PORTFOLIO*/
+.buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center;
+    gap: 20px;
+    height: 90vh;
+    flex-direction: column;
+    font-size: 15px;
+}
+.buttons a{
+    background:#927fbf ;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    width:80%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* drawing*/
+.backbutton{
+    justify-content:left; /* Center the buttons horizontally */
+    align-items:flex-start;
+    padding: 20px 0px 0px 20px;
+}
+.backbutton a{
+    position: relative;
+    color:#c4bbf0;
+}
+.section{
+    display:flex;
+    justify-content: space-between;
+    padding:0;
+    width:0%;
+}
+.section img{
+   height:150px;
+   transform: translateX(50%);
+   margin-right:0%;
+   padding-right:0;
+}
+
+.section p{
+    color:white;
+    font-size:xx-small;
+    text-align:left;
+    right:0;
+
+
+}
+
+  /*CONTACTS*/
+.social-links{
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
+    align-items: center;
+    font-size: large;
+    height: 0h;
+    max-height: max-content;
+}
+.social-links a{
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color:#c4bbf0;
+    margin: 0 30px;
+}
+.social-links span:hover{
+    color: #927fbf;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .wrapper{
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    nav h1{
+        font-size:large;
+    }
+    nav ul li{
+        margin: 10px 20px;
+        font-size: medium;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-weight:300;
+    }
+
+
+    .info h1{
+        padding-top:200px;
+        font-size: 200px;
+    }
+    .info h2{
+        padding:20px 0px 0px;
+        font-size: 40px;
+    }
+    .info h3{ 
+        font-size: 25px;
+    }
+    .info p{
+        padding:20px 0px 0px;
+        font-size: 15px;
+
+    }
+
+
+    /*ABOUT*/
+    .detail2 h2{
+        font-size: 200%;
+        line-height: normal;
+    }
+    .detail2 p{
+        font-size: 200%;
+        line-height: normal;
+    }
+
+    /*CONTACTS*/
+    .social-links{
+        display: flex;
+        flex-direction: column;
+        padding: 6rem;
+        align-items: center;
+        font-size: 30px;
+        height: 100vh;
+        gap:30px;
+      }
+    .social-links a{
+        width: 100%;
+        height: 15%;
+        text-align: center;
+        text-decoration: none;
+        color:#c4bbf0;
+        margin: 0 30px;
+        position:sticky;
+      }
+    .social-links span:hover{
+        color: #927fbf;
+      }
+
+    /*portfolio*/
+    .buttons {
+        display: flex;
+        justify-content: center; /* Center the buttons horizontally */
+        align-items: center;
+        gap: 20px;/* Space between buttons */
+        height: 100vh;
+        flex-direction: column; /*fave na kita*/
+        font-size: 30px;
+    }
+    .buttons a{
+        background:#927fbf ;
+        padding: 30px 20px 0px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        display: block;
+        width:80%;
+        height:10%;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .wrapper{
+        width: 1000px;
+    }
+    .wrapper .detail2{
+        width:1100px;
+    }
+
+
+    nav h1{
+        font-size:large;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: px 5px;
+        font-size: medium;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-weight:600;
+    }
+    nav ul li a:hover{
+        color:#927fbf;
+    }
+
+
+    .info{
+        width: 1000px;
+        float:none;
+    }
+    .info h1{
+        padding-top:120px;
+        font-size: 150px; 
+        text-align:center;
+    }
+    .info h2{
+        padding:20px 0px 0px 30px;
+    }
+    .info p{
+        padding:20px 0px 0px 30px;
+    }
+
+    /*ABOUT*/
+    /*aboutmepic*/
+    .position{
+        float:right;
+        width:auto;
+        margin-right: 0px;
+        margin-left:2rem; /*tinatamaan text*/
+    }
+
+    .detail2 h2{
+        padding-top: 8rem;;
+        font-size: 20px;
+        color: white;
+        line-height: 24px;
+        text-align: left;
+    }
+    .detail2 p{
+        text-align: left;
+        font-size: 20px;
+        padding-left: 0px;
+        
+    }
+
+    /*PORTFOLIO*/
+    .buttons {
+        display: flex;
+        justify-content: center;                                                    
+        align-items: center;
+        gap: 20px;                                                                        
+        height: 90vh;
+        flex-direction: column; /*fave na kita*/
+        font-size: 20px;
+    }  
+    .buttons a{
+        background:#927fbf ;
+        padding: 15px 10px 10px 0px;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        display: block;
+        width:50%;
+        height:10%;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    /*CONTACTS*/
+    .social-links{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+    .social-links a{
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        text-decoration: none;
+        color:#c4bbf0;
+        margin: 0 0px;
+        position:sticky;
+      }
+
+    }
+
+    
+
+
