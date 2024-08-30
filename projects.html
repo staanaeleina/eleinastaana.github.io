@@ -5,83 +5,27 @@
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     </head>
     <body>
-        <div class="hero">
-            <nav>
-                <h1>SaintAnne Portfolio.</h1>
-                <ul><li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="myworks.html">WORKS</a></li>
-                    <li><a href="contacts.html">CONTACTS</a></li>
-                </ul>
-            </nav>
+        <div class="backbutton">
+            <a href="myworks.html"><i class="fa-solid fa-circle-chevron-left"></i></i></a>
         </div>
-        <div class="container">
-            <img src="img_avatar.png" alt="Avatar" class="image">
-            <div class="overlay">
-              <div class="text">Hello World</div>
+        <div class="images">
+            <div class="polaroid">
+                <img src="https://res.cloudinary.com/dvr0evn7t/image/upload/v1725013733/order_zqaxbm.png" alt="cavetown">
+                <p class="caption">ORDER SYSTEM<br>USING VISUAL STUDIO 2022</p>
             </div>
+            <div class="polaroid">
+                <img src="https://res.cloudinary.com/dvr0evn7t/image/upload/v1725016654/otter_pncbp1.png" alt="klaus">
+                <p class="caption">OTTER WEBSITES<br>USING SHTML<br></p>
+            </div>
+            <div class="polaroid">
+              <img src="https://res.cloudinary.com/dvr0evn7t/image/upload/v1725018230/levenstein_galore_vftmqu.png" alt="klaus">
+              <p class="caption">LEVENSTEIN GALORE<br>USING PYTHON AND TKINTER<br>DEVELOPED IN PARTNERSHIP W/ <br>ELLORANDO, JILLIAN</p>
+          </div>  
         </div>
-
-
-        <!DOCTYPE html>
-        <html>
-        <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-        .container {
-          position: relative;
-          width: 50%;
-        }
-        
-        .image {
-          display: block;
-          width: 100%;
-          height: auto;
-        }
-        
-        .overlay {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          background-color: #008CBA;
-          overflow: hidden;
-          width: 100%;
-          height: 0;
-          transition: .5s ease;
-        }
-        
-        .container:hover .overlay {
-          height: 100%;
-        }
-        
-        .text {
-          color: white;
-          font-size: 20px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-          text-align: center;
-        }
-        </style>
-        </head>
-        <body>
-        
-        <h2>Slide in Overlay from the Bottom</h2>
-        <p>Hover over the image to see the effect.</p>
-        
-        <div class="container">
-          <img src="img_avatar.png" alt="Avatar" class="image">
-          <div class="overlay">
-            <div class="text">Hello World</div>
-          </div>
-        </div>
-        
-        </body>
-        </html>
-            
+    
+    
+    </body>
+</html>
