@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     background: #363b4e;
-    font-family: sans-serif;
+    font-family:sans-serif;
     box-sizing: border-box;
 }
 
@@ -12,9 +12,9 @@
 
 nav{
     display:flex;
-    width:90%;/*logo and buttons*/
+    width:100%;/*logo and buttons*/
     margin: auto;
-    padding: 10px 0;
+    padding: 10px 20px 0px 20px;
     align-items: center;
     justify-content: space-between;
 }
@@ -35,15 +35,14 @@ nav ul li a:hover{
 nav h1{
     text-align: right;
     font-size:x-small;
-    color: white;
+    color:white;
 }
-
 
 .info{
     width: 100%;
 }
 .info h1{
-    padding-top:90px;
+    padding-top:100px;
     font-size: 150px;
     color: white;
     margin-bottom: 10px;
@@ -77,19 +76,20 @@ nav h1{
 .detail2{
     color: white;
 }
+
 .detail2 h2{
     padding-top:10px;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     line-height: 24px;
     text-align: center;
 }
 .detail2 p{
-    padding:10px 30px 20px;
-    font-size: 16px;
+    padding:5px 30px 30px 30px;
+    font-size: 10px;
     color: white;
-    line-height: 24px;
-    text-align: center;
+    line-height: 20px;
+    text-align:justify;
 }
 .detail2 span{
     color:#c4bbf0;
@@ -97,11 +97,11 @@ nav h1{
 
 /*aboutmepic*/
 .position {
-    margin-top: 5rem;
+    margin-top: 1rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 50%;
     display: block;
   }
 
@@ -109,7 +109,7 @@ nav h1{
   /*PORTFOLIO*/
 .buttons {
     display: flex;
-    justify-content: center; /* Center the buttons horizontally */
+    justify-content: center;
     align-items: center;
     gap: 20px;
     height: 90vh;
@@ -129,36 +129,55 @@ nav h1{
     border-radius: 5px;
 }
 
+.buttons a:hover {
+    background-color:#c4bbf0;
+}
 
-/* drawing*/
+/* drawing*/ 
 .backbutton{
-    justify-content:left; /* Center the buttons horizontally */
     align-items:flex-start;
-    padding: 20px 0px 0px 20px;
+    padding: 15px 0px 0px 20px;
+    text-align: left;
 }
 .backbutton a{
-    position: relative;
     color:#c4bbf0;
-}
-.section{
-    display:flex;
-    justify-content: space-between;
-    padding:0;
-    width:0%;
-}
-.section img{
-   height:150px;
-   transform: translateX(50%);
-   margin-right:0%;
-   padding-right:0;
+    text-decoration: none;
+    font-size: 150%;
 }
 
-.section p{
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.polaroid {
+    max-width: 100%;
+    background-color: #4f3b78;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+.polaroid img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+    height:150px;
+    object-fit: cover;
+}
+
+
+.caption{
+    padding: 0 10px 10px 10px;
+    background-color:#4f3b78;
+    border-radius:0 0 10px 10px ;
     color:white;
-    font-size:xx-small;
-    text-align:left;
-    right:0;
-
+    font-size: 10%;
 
 }
 
@@ -168,17 +187,13 @@ nav h1{
     flex-direction: column;
     padding: 6rem;
     align-items: center;
-    font-size: large;
-    height: 0h;
-    max-height: max-content;
 }
 .social-links a{
     width: 100px;
-    height: 80px;
+    padding:30px 0 30px 0;
     text-align: center;
     text-decoration: none;
     color:#c4bbf0;
-    margin: 0 30px;
 }
 .social-links span:hover{
     color: #927fbf;
@@ -187,8 +202,7 @@ nav h1{
 
 @media only screen and (min-width: 768px) {
     .wrapper{
-        width: 600px;
-        margin: 0 auto;
+        width: 100%;
     }
 
     nav h1{
@@ -199,11 +213,8 @@ nav h1{
         font-size: medium;
     }
     nav ul li a{
-        text-decoration: none;
-        color: white;
-        font-weight:300;
+        font-weight:400;
     }
-
 
     .info h1{
         padding-top:200px;
@@ -214,182 +225,187 @@ nav h1{
         font-size: 40px;
     }
     .info h3{ 
-        font-size: 25px;
+        font-size: 30px;
     }
     .info p{
         padding:20px 0px 0px;
-        font-size: 15px;
-
+        font-size: 21px;
     }
 
 
-    /*ABOUT*/
+    /*ABOUT IPAD*/
     .detail2 h2{
-        font-size: 200%;
+        font-size: 25px;
         line-height: normal;
+
     }
     .detail2 p{
-        font-size: 200%;
+        font-size: 20px;
         line-height: normal;
+        font-weight: 100;
+        margin: 0px 20px;
     }
 
-    /*CONTACTS*/
-    .social-links{
-        display: flex;
-        flex-direction: column;
-        padding: 6rem;
-        align-items: center;
-        font-size: 30px;
-        height: 100vh;
-        gap:30px;
+    .position {
+        margin-top: 3rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
       }
-    .social-links a{
-        width: 100%;
-        height: 15%;
-        text-align: center;
-        text-decoration: none;
-        color:#c4bbf0;
-        margin: 0 30px;
-        position:sticky;
-      }
-    .social-links span:hover{
-        color: #927fbf;
-      }
-
-    /*portfolio*/
+    
+    
+    
+    /*PORFTFOLIO IPAD*/
     .buttons {
-        display: flex;
-        justify-content: center; /* Center the buttons horizontally */
-        align-items: center;
-        gap: 20px;/* Space between buttons */
-        height: 100vh;
-        flex-direction: column; /*fave na kita*/
+        height: 90vh;
         font-size: 30px;
     }
     .buttons a{
-        background:#927fbf ;
-        padding: 30px 20px 0px 10px;
-        text-decoration: none;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        display: block;
-        width:80%;
+        padding: 20px 20px 0px 10px;
         height:10%;
-        cursor: pointer;
-        border-radius: 5px;
+    }
+
+    /*DRAWING IPAD*/
+    .backbutton{
+        padding: 50px 0px 0px 50px;
+    }
+    .backbutton a{
+        font-size: 200%;
+    }
+
+    .polaroid img{
+        height:200px;
+    }
+
+    /*CONTACTS IPAD*/
+    .social-links{
+        padding-top:5rem;
+        font-size: 30px;
+      }
+    .social-links a{
+        position:sticky;
+        width:100%;
+        padding: 50px 0 50px 0;
     }
 
 }
 
+
 @media only screen and (min-width: 1000px) {
     .wrapper{
-        width: 1000px;
+        width: 100%;
     }
-    .wrapper .detail2{
-        width:1100px;
-    }
-
-
     nav h1{
-        font-size:large;
+        font-size:20px;
     }
     nav ul li{
-        display: inline-block;
-        list-style: none;
-        margin: px 5px;
-        font-size: medium;
+        font-size:15px;
+        margin: 30px 30px 30px 30px;
     }
     nav ul li a{
-        text-decoration: none;
-        color: white;
         font-weight:600;
     }
-    nav ul li a:hover{
-        color:#927fbf;
-    }
-
 
     .info{
-        width: 1000px;
+        width: 100%;
         float:none;
     }
     .info h1{
-        padding-top:120px;
-        font-size: 150px; 
-        text-align:center;
+        padding-top:100px;
+        font-size:80;
     }
     .info h2{
         padding:20px 0px 0px 30px;
     }
     .info p{
         padding:20px 0px 0px 30px;
+        font-size:130%;
+    }
+    .info h3{
+        font-size: 170%;
     }
 
-    /*ABOUT*/
+    /*ABOUT DESKTOP*/
     /*aboutmepic*/
     .position{
         float:right;
-        width:auto;
-        margin-right: 0px;
-        margin-left:2rem; /*tinatamaan text*/
+        margin-right:5%;
+        margin-left:5%;
+        margin-top: 5%;
+    }
+
+    .detail2 img{
+        width:40%;
     }
 
     .detail2 h2{
-        padding-top: 8rem;;
+        padding-top: 5rem;
         font-size: 20px;
-        color: white;
-        line-height: 24px;
-        text-align: left;
+        text-align:left;
+        margin-left: 80px;
+
     }
     .detail2 p{
-        text-align: left;
+        padding-left: 0%;
+        text-align:left;
         font-size: 20px;
-        padding-left: 0px;
+        margin:0px 50px 0px 80px;
         
     }
 
-    /*PORTFOLIO*/
-    .buttons {
-        display: flex;
-        justify-content: center;                                                    
-        align-items: center;
-        gap: 20px;                                                                        
-        height: 90vh;
-        flex-direction: column; /*fave na kita*/
-        font-size: 20px;
+    /*PORTFOLIO DESKTOP*/
+    .buttons {                                                                                                
+        font-size: 25px;
+        
     }  
     .buttons a{
-        background:#927fbf ;
-        padding: 15px 10px 10px 0px;
-        text-decoration: none;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        display: block;
-        width:50%;
+        padding: 20px 10px 0px 0px;
+        width:40%;
         height:10%;
-        cursor: pointer;
-        border-radius: 5px;
     }
 
-    /*CONTACTS*/
+    /*DRAWING DESKTOP*/
+    .backbutton{
+        padding: 50px 0px 0px 50px;
+    }
+    .backbutton a{
+        font-size: 300%;
+    }
+
+    .polaroid{
+        height: 400px;
+    }
+
+    .polaroid img {
+        height:300px;
+    }
+
+    .caption{
+        padding-top: 5%;
+        font-size: 80%;
+    }
+
+    .images{
+        flex-direction: row;
+        gap:5%;
+        display:flex;
+        justify-content: none;
+        height: calc(100vh - 190px);
+
+    }
+    /*CONTACTS DESKTOP*/
     .social-links{
-        display: flex;
-        flex-direction: column;
         height: 100%;
+        padding: 4rem 0 0 0;
       }
     .social-links a{
-        width: 100%;
-        height: 80px;
-        text-align: center;
-        text-decoration: none;
-        color:#c4bbf0;
-        margin: 0 0px;
+        width: 30%;
+        margin: 0px 0px 0px 0px;
         position:sticky;
       }
 
-    }
+}
 
     
 
