@@ -82,7 +82,7 @@ nav h1{
     font-size: 15px;
     color: white;
     line-height: 24px;
-    text-align: center;
+    text-align:center;
 }
 .detail2 p{
     padding:5px 30px 30px 30px;
@@ -203,7 +203,7 @@ nav h1{
 .codelinks a{
     width: 100%;
     padding:30px 0 30px 0;
-    text-align:left;
+    text-align:center;
     text-decoration: none;
     color:#c4bbf0;
 
