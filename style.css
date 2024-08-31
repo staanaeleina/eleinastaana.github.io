@@ -341,6 +341,10 @@ nav h1{
     .wrapper{
         width: 100%;
     }
+
+    .info{
+        padding-top: 30px;
+    }
     nav h1{
         font-size:20px;
     }
@@ -466,9 +470,4 @@ nav h1{
         margin: 0px 0px 0px 0px;
         position:sticky;
       }
-
 }
-
-    
-
-
